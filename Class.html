@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// Declaring CLass
+        // class Product{
+        //     constructor(itemName, price, discount, itemCode){
+        //         this.itemName = itemName;
+        //         this.price = price;
+        //         this.discount = discount;
+        //         this.itemCode = itemCode;
+        //     }
+        // }
+
+        // let pencil = new Product ("Pencil", 20, 2, 'P10');
+
+
+//CLass Expression
+        // const Product1 = class {
+        //     constructor(itemName, price, discount, itemCode){
+        //         this.itemName = itemName;
+        //         this.price = price;
+        //         this.discount = discount;
+        //         this.itemCode = itemCode;
+        //     }
+        //     get getDiscountValue(){         //Getter
+        //         return this.discount
+        //     }
+
+        //     set setDiscountValue(value){    //Setter 
+        //         this.discount = value;
+        //     }
+
+        //     discountValue(){        // Method Definition
+        //         return this.discount*this.price/100
+        //     }
+        // };
+
+        // let chair = new Product1("Chair", 499, 5, 'C-10')
+
+
+// Extending CLass
+        class Product{
+            constructor(itemName){
+                console.log("passed by Furniture "+ itemName);
+                this.itemName = itemName;
+            }
+        
+        getItemName(){
+            return this.itemName + " is a product";
+        }
+        }
+
+        class Furniture extends Product {
+            constructor(itemName){
+                super(itemName);
+            }
+
+            getItemName(){
+                return this.itemName+ " is a furniture";
+            }
+        }
+
+        let pencil = new Product ("Pencil");
+        let chair = new Furniture("Chair")
+    </script>
+</body>
+</html>

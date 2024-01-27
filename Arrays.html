@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+
+    <script>
+        const arrays = [1,2,3,4,5,6,7,8,9,10];
+
+        // Push
+        arrays.push(11)
+
+        // Un-shift
+        arrays.unshift(0)
+
+        // POP
+        arrays.pop()
+
+        // Shift
+        arrays.shift()
+
+        
+        const names= ['Aman', 'Dhaniya', 'Pudina', 'Baingan', 'Aalu', 'Gobhi', 'Matar'];
+
+        // indexOf
+        names.indexOf('Pudina');
+
+        // lastIndexOf
+        names.lastIndexOf('Pudina');
+
+        // includes
+        name.includes('baingan')
+
+        let channels = [{
+            name: "Mystical Techs",
+            subscribers: 2240
+        },  {
+            name: "Be Lit",
+            subscribers: 47
+        },  {
+            name: "Mystical Steps",
+            subscribers: 130
+        }];
+
+        // console.log(channels.find(function(element){
+        //     return element.subscribers < 100
+        // }))
+
+        let names1 = ['Aman', 'Dhavan', 'Akash']
+        let names2 = ['Priya', 'Sushi', 'Pooja']
+        // let names3= names1.concat(names2)
+        // console.log(names3.slice(1,3))
+
+        let names3 = [...names1,...names2]
+        console.log(names3)
+
+        for (let i=0; i<names.length; i++)
+        {
+            console.log(names[i])
+        }
+
+        //For of
+        for(let z of names){
+            console.log(z)
+        }
+
+
+        // for-each
+
+        names.forEach(function(zzz,indexxx){
+            console.log("NEWWWWWW",zzz,indexxx);
+        })
+
+        // Join
+        let student = ['S', 'h', 'i', 'v', 'a']
+        student = student.join('_');
+        //console.log(student.join('-'))
+
+        // Split
+        console.log(student.split('_'))
+
+        // FILTER()
+
+        let cities = [
+            {naam: 'Mumbai', population: 3792621},
+            {naam: 'Delhi', population: 792621},
+            {naam: 'Bangalore', population: 22621},
+            {naam: 'Chennai', population: 20899451},
+            {naam: 'Lucknow', population: 1526006}
+        ];
+
+        console.log(cities.filter(city => city.population > 300000 ))
+        
+
+        // Map ()
+        console.log(cities.map(city => city.population*2 ))
+
+
+    </script>
+</body>
+</html>

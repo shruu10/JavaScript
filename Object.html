@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in JavaScript</title>
+</head>
+<body>
+    
+
+    <script>
+  
+        // let lecture = 10;
+        // let section = 3;
+        // let title = "JavaScript";
+
+        // const course = {        //course is object
+        //     lecture: 10,        //Lecture= Property and 10= Key (Course ke andar ke property hogi hogi Lec,Sec,Tit)
+        //     section: 3,
+        //     title: "JavaScipt",
+
+        //     notes:{             //Object inside Object
+        //         introduction: "Welcome to JS Course"
+        //     },
+        //     enroll() {
+        //         console.log("you are successfully enrolled")
+        //     }
+        // }
+
+        // function enroll () {
+        //         console.log("you are successfully enrolled")
+        //     }
+
+
+        // course.enroll()
+        // console.log(course)
+
+        // course.price = "free" 
+// NO.2
+
+function createCourse(title){
+            return{        //course is object
+            title: title,
+            enroll() {
+                console.log("you are successfully enrolled")
+                        }
+            }
+        }
+
+
+// Constructor Function
+
+        function Course(title){
+            this.title = title,
+            this.enroll = function(){
+                console.log('You are successfully enrolled');
+            }
+        }
+    // const course = new Course('JavaScript');
+    // course.enroll()
+    // course.checkEnrollement = function(){
+    //     console.log("30 users are enrolled");
+    // }
+    // delete course.enroll;
+    // console.log(course);
+
+    const course = new Course('JavaScript');
+    console.log(course.constructor)
+    console.log(newCourse.constructor)
+    </script>
+</body>
+</html>

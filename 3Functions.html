@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <h1>Function Declaration</h1>
+    <h1>Function Expression</h1>
+
+    <script>
+
+      //Function DECLARATION
+      function maths(a, b) {
+        console.log("Declaration= ", a + b);
+      }
+      maths(2, 4);
+
+
+      //Function EXPRESSION
+      let maths1 = function (a, b) {
+        console.log("Expression= ",a + b);
+      };
+      maths1(1,9);
+
+
+      function showMessage() {
+        alert("Hello Everyone");
+      }
+      // showMessage();
+      // showMessage();
+
+      let name = "Lalit"; //Global Variable
+      function naam() {
+        alert(name); //Can be access here
+      }
+      // naam();
+
+      let username = "John";
+      function message() {
+        username = "BOB";
+        alert("1st" + username);
+      } /*
+      alert("2nd" + username); //Old name John
+      message(); //Change the value after calling function
+      alert("3rd" + username); //New name BOB
+      */
+
+      ///////////FUNCTIONS WITH (PARAMETERS)//////////////
+
+      function para(from, text) {
+        alert(from + ":" + text);
+      }
+
+      // para("Lalit", "Hey!");
+
+      function para1(fom, txt) {
+        fom = "**" + fom + "**";
+        // alert(fom + txt);
+      }
+
+      let fom = "Ani";
+      para1(fom, "Love You");
+
+      // alert(fom);
+
+      function sum(a, b) {
+        return a + b;
+      }
+
+      let result = sum(1, 2);
+      // alert(result);
+
+      //   function checkAge(age) {
+      //     if (age >= 18) {
+      //       console.log("Age>=18");
+      //       return true;
+      //     } else {
+      //       return confirm("Do you have your Parents Permission?");
+      //     }
+      //   }
+
+      //   let age = prompt("How old are you?", 18);
+      //   console.log("Age Variable Created");
+
+      //   if (checkAge(age)) {
+      //     console.log("Permission milegi  ");
+      //     alert("access granted");
+      //   } else {
+      //     alert("access denied");
+      //   }
+
+      function checkAge(age) {
+        return age > 18 ? true : confirm("Did parents allow you?");
+      }
+    </script>
+  </body>
+</html>

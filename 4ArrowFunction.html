@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function</title>
+  </head>
+  <body>
+    <h1>Arrow Function</h1>
+    <h1>Multiline Arrow Function</h1>
+    <script>
+      // Arrow Function
+      let sum = (a, b) => a + b;
+      console.log(sum(5, 2));
+
+      //Arrow Function
+      let showMessage = () => console.log("Hi Lalit this side with Arrow Functions");
+      showMessage();
+
+      //Function Declaration
+      function showMessage0() {
+        console.log("Hi Lalit this side with Function Declaration");
+      }
+      showMessage0();
+
+      //Function Expression
+      let showMessage1 = function () {
+        console.log("Hi Lalit this side with Function Expressions");
+      };
+      showMessage1();
+
+    //   let age = prompt("What is your age?", 18);
+    //   let welcome = (age < 18) ? 
+    //   () => alert("Hello!") : 
+    //   () => alert("Greetings!");
+    //   welcome();
+
+      //MultiLine Arrow Function
+      let add = (a, b) => {
+          let result = a+b;
+          return result;
+      };
+      console.log(add(2,2));
+
+      let ask = (question, yes, no) => { 
+          if(confirm(question)) {
+               yes();
+            }
+          else{
+               no();
+          }
+        }
+        ask( "Do You Agree?",
+        () => alert("You Agreed"), 
+        () => alert("You Cancelled the execution"));
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      let user = {      //An Object
+        name: "Lalit",
+        age: 20,
+      };
+      console.log(user.name);
+      console.log(user.age);
+      delete user.age; //Delete Command
+      console.log(user.age);
+
+
+      let zoo = {
+        animal: "Lion",
+        no: 10,
+        "female lion": true,
+      };
+      console.log(zoo["female lion"]);
+
+
+      let birds = {};
+
+      birds["like birds"] = "Peacock"; //set
+      console.log(birds["like birds"]); //get
+      delete birds["like birds"]; //delete
+
+
+      let dog = {
+          name:"Leo",
+          age:2,
+          breed:"Husky",
+      };
+
+      let info = prompt("What do you wanna know","breed");
+      console.log(dog[info]);
+      console.log( dog.key );   //undefined 
+
+      function User() {
+        //Function Declaration
+      }
+      let user1 = function () {
+        //Function Expression
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello World in Console</h1>
+    <h1>Alert in JS</h1>
+    <h1>Array forEach Alert</h1>
+    <h2>; is must to separate the code</h2>
+    <h2>let Variable & multiple variable</h2>
+    <h2>const variable</h2>
+    <h2>Dynamically Typed Language no need to define int, float, char</h2>
+    <h2>
+      Backticks are “extended functionality” quotes. They allow us to embed
+      variables and expressions into a string by wrapping them in ${…},
+    </h2>
+    <h2>Boolean Data Type</h2>
+    <h2>Prompt, Confirm</h2>
+    <h2>Type Conversion</h2>
+    <h2>Basic Operators</h2><p>+ adds the strings -/* don't do so</p>
+
+    <script>
+      console.log("Hello World!");
+
+      // alert("I'm JavaScript");
+      // [1, 2].forEach(alert);
+
+      let text = "message";
+      console.log(text);
+
+      let user = "Lalit",
+        age = 20,
+        message = "Mystical";
+      console.log(user, age, message, text);
+
+      const birthDate = "1.11.2001";
+      //const values can't be changed
+      console.log(birthDate);
+
+      let admin, name;
+      name = "John";
+      admin = name;
+      console.log(admin);
+
+      let name1 = "Lalit";
+      console.log(`Good Morning ${name1}!`);
+      console.log(`2 + 2 = ${2 + 2}`);
+
+      let isGreater = 40 > 6;
+      console.log(isGreater);
+
+    //   let age1 = prompt("How old are you?",98);
+    //   console.log(`You are ${age1} years old`);
+
+    //   let isBoss = confirm("Are you the Boss?");
+    //   console.log(isBoss);
+
+    //   let naam = prompt("Apka naam kya hai?", "Lalit");
+    //   console.log(`Apka naam ${naam} hai!!`);
+
+      let value = true;
+      console.log(typeof(value));
+      value1 = String(value);
+      value2 = Number(value);
+
+      console.log(value1, value2)
+    </script>
+  </body>
+</html>
